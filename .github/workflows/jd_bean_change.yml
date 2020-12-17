@@ -1,4 +1,4 @@
-name: 京东京豆变动通知
+name: 京豆变动通知
 
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
       - name: npm install
         run: npm install
-      - name: '运行 【京东京豆变动通知】'
+      - name: '运行 【京豆变动通知】'
         run: node jd_bean_change.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
