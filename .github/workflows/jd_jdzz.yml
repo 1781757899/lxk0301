@@ -3,7 +3,7 @@ name: 京东赚赚小程序
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 17 * * *'
   watch:
     types: started
   repository_dispatch:
