@@ -7,16 +7,16 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: JD_DailyBonus
+    types: JD_bean_sign
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - name: Checkout github_NobyDa_Script
+      - name: Checkout github_lxk0301_jd_scripts
         uses: actions/checkout@v2
         with:
-          repository: NobyDa/Script/JD-DailyBonus
+          repository: liuning0307/lxk0301
           ref: master
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
@@ -32,7 +32,7 @@ jobs:
       - name: npm install
         run: npm install
       - name: '运行 【京东签到】'
-        run: node JD_DailyBonus.js
+        run: node jd_bean_sign.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
