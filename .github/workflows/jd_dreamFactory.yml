@@ -1,4 +1,4 @@
-name: 京豆变动通知
+name: 京喜工厂
 
 on:
   workflow_dispatch:
