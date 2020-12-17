@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - name: Checkout github_NobyDa_Script_JD-DailyBonus
+      - name: Checkout github_NobyDa_Script
         uses: actions/checkout@v2
         with:
           repository: NobyDa/Script/JD-DailyBonus
