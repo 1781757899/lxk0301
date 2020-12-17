@@ -136,7 +136,7 @@ async function doChannelsListTask(taskId, taskType) {
 async function helpFriends() {
   await updateInviteCode();
   if (!$.inviteCodes) await updateInviteCodeCDN();
-  if (!$.inviteCodes) await updateInviteCodeCDN('https://gitee.com/lxk0301/updateTeam/raw/master/jd_updateSmallHomeInviteCode.json');
+  if (!$.inviteCodes) await updateInviteCodeCDN('https://raw.githubusercontent.com/liuning0307/try/main/jd_small_home_invitecodes.json');
   for (let item of $.inviteCodes.inviteCode) {
     if (!item) continue
     await createAssistUser(item, $.createAssistUserID || "1318106976846299138");
@@ -766,7 +766,7 @@ function login(userName) {
     })
   })
 }
-function updateInviteCode(url = 'https://raw.githubusercontent.com/lxk0301/updateTeam/master/jd_updateSmallHomeInviteCode.json') {
+function updateInviteCode(url = 'https://raw.githubusercontent.com/liuning0307/try/main/jd_small_home_invitecodes.json') {
   return new Promise(resolve => {
     $.get({url}, async (err, resp, data) => {
       try {
@@ -783,7 +783,7 @@ function updateInviteCode(url = 'https://raw.githubusercontent.com/lxk0301/updat
     })
   })
 }
-function updateInviteCodeCDN(url = 'https://raw.fastgit.org/lxk0301/updateTeam/master/jd_updateSmallHomeInviteCode.json') {
+function updateInviteCodeCDN(url = 'https://raw.fastgit.org/liuning0307/try/main/jd_small_home_invitecodes.json') {
   return new Promise(async resolve => {
     $.get({url}, async (err, resp, data) => {
       try {
