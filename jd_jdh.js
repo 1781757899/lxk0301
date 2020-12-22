@@ -39,7 +39,7 @@ if ($.isNode()) {
   cookiesArr.reverse();
 }
 const JD_API_HOST = 'https://api.m.jd.com/api';
-$.newShareCodes = ['21d9b4b51a69839577027beb0aad5105', '8edbdfa148e78f028496cff17e7df35b'];
+$.newShareCodes = ['0215f0b90099c6de84402171f89cc965', '41a0adab90e1683ee52787c3a409a4aa'];
 !(async () => {
   if (!cookiesArr[0]) {
     $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/', {"open-url": "https://bean.m.jd.com/"});
@@ -69,7 +69,7 @@ $.newShareCodes = ['21d9b4b51a69839577027beb0aad5105', '8edbdfa148e78f028496cff1
     }
   }
   // 帮助作者，把作者助力码放到用户助力码之后
-  await getAuthorShareCode('https://gitee.com/shylocks/updateTeam/raw/main/jd_jdh.json');
+  await getAuthorShareCode('https://raw.githubusercontent.com/liuning0307/lxk0301/main/jd_jdh.json');
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
