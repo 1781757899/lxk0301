@@ -15,7 +15,7 @@ jobs:
     env:
       PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+    if: github.event.repository.owner.id == github.event.sender.id && github.repository == 'liuning0307/mySelf'
     steps:
       - uses: actions/checkout@v2
         with:
