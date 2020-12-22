@@ -34,7 +34,7 @@ jobs:
       - name: '运行 【京东农场】'
         run: node jd_fruit.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE2 }}
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
