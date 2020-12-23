@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: liuning0307/lxk0301
-          ref: master
+          ref: main
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
