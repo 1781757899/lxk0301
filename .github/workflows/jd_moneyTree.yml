@@ -32,7 +32,7 @@ jobs:
       - name: npm install
         run: npm install
       - name: '运行 【京东摇钱树】'
-        run: node jd_moneytree.js
+        run: node jd_moneyTree.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
