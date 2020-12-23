@@ -8,6 +8,7 @@ on:
     types: started
   repository_dispatch:
     types: jd_speed
+jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
