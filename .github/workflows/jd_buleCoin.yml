@@ -32,7 +32,7 @@ jobs:
       - name: npm install
         run: npm install
       - name: '运行 【东东超市兑京豆】'
-        run: node jd_bluecoin.js
+        run: node jd_blueCoin.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
