@@ -3,7 +3,7 @@ name: crzayjoy挂机死循环
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 1,9,17 * * *'
   watch:
     types: started
   repository_dispatch:
