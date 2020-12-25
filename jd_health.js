@@ -42,7 +42,7 @@ if ($.isNode()) {
   cookiesArr.reverse();
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-const inviteCodes = [`P04z54XCjVUnoaW5nJcXCCyoR8C6i9QR16e`, 'P04z54XCjVUnoaW5m9cZ2T6jChKkh8FWbFAplQ', `P04z54XCjVUnoaW5u2ak7ZCdan1Bdbpik_F9ud7lznm`, `P04z54XCjVUnoaW5m9cZ2ariXVJwFN5uKHNqnc`];
+const inviteCodes = [`T020a0jwlZS1Id5r9ZpVQ0-NCjVUnoaW5kRrbA`, 'T0205KkcAmt7tByidEG9_pdsCjVUnoaW5kRrbA', `T0205KkcI3h-vRWXUnKt74BcCjVUnoaW5kRrbA`, `T0205KkcGGd-vDSuakWV851tCjVUnoaW5kRrbA`];
 !(async () => {
   await requireConfig();
   if (!cookiesArr[0]) {
