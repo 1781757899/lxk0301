@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: liuning0307/lxk0301
-          ref: main
+          ref: master
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -46,3 +46,4 @@ jobs:
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           JDJOY_HELPSELF: ${{ secrets.JDJOY_HELPSELF }}
           JDJOY_APPLYJDBEAN: ${{ secrets.JDJOY_APPLYJDBEAN }}
+          JDJOY_SHARECODES: ${{ secrets.JDJOY_SHARECODES }}
