@@ -3,7 +3,7 @@ name: 小程序赚京豆签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 14 * * *'
+    - cron: '5 20 * * *'
   watch:
     types: started
   repository_dispatch:
